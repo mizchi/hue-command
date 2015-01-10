@@ -1,0 +1,21 @@
+{
+  "name": "hue-command",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "hue": "bin/hue"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bluebird": "^2.6.2",
+    "lodash": "^2.4.1",
+    "node-hue-api": "^0.2.6",
+    "onecolor": "^2.4.2",
+    "optimist": "^0.6.1"
+  }
+}

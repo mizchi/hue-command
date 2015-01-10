@@ -1,0 +1,13 @@
+#!/usr/bin/env coffee
+
+api = require '../api'
+argv = require 'optimist'
+  .argv
+
+command = argv._[0]
+switch command
+  when 'on'
+    api.onLights(argv).then -> console.log 'turn on lights'
+  when 'off'
+    api.offLights().then -> 'turn off lights'
+  when 'register' then api.register()
