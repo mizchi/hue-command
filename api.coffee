@@ -8,7 +8,7 @@ configPath = process.env.HOME+'/.hue.json'
 api = null
 
 getBridgeIp = -> new Promise (done) ->
-  hue.locateBridges()
+  hue.nupnpSearch()
     .then (bridges) ->
       b = bridges[0]
       done b.ipaddress
@@ -79,7 +79,7 @@ if fs.existsSync(configPath)
   ip = data.ip
   username = data.username
 else
-  api.register()
+  register()
   return
 
 api = new hue.HueApi(ip, username)
