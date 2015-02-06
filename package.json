@@ -14,7 +14,7 @@
   "dependencies": {
     "bluebird": "^2.6.2",
     "lodash": "^2.4.1",
-    "node-hue-api": "^0.2.6",
+    "node-hue-api": "^0.2.7",
     "onecolor": "^2.4.2",
     "optimist": "^0.6.1"
   }

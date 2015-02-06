@@ -18,7 +18,7 @@
 
   getBridgeIp = function() {
     return new Promise(function(done) {
-      return hue.locateBridges().then(function(bridges) {
+      return hue.nupnpSearch().then(function(bridges) {
         var b;
         b = bridges[0];
         return done(b.ipaddress);
@@ -99,7 +99,7 @@
     ip = data.ip;
     username = data.username;
   } else {
-    api.register();
+    register();
     return;
   }
 
